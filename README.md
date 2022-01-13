@@ -26,4 +26,4 @@ Configuration:
 
 Uninstallation of Module:
 --------------
-  1. normally Uninstall any Drupal module.
+  1. Normally Uninstall any Drupal module.
