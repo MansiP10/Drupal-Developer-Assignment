@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains site_location.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function site_location_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the site_location module.
+    case 'help.page.site_location':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('user should be able to see the Site location and the current time for the location') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function site_location_theme() {
+  return [
+    'site_location' => [
+      'variables' => [
+        'country' => null,
+        'city' => null,
+        'time' => null,
+      ],
+      'template' => 'dispaly-time-zone',
+    ],
+  ];
+}
+

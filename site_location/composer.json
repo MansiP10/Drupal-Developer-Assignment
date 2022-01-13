@@ -1,0 +1,13 @@
+{
+    "name": "site_location",
+    "type": "drupal-module",
+    "description": "user should be able to see the Site location and the current time for the location",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/site_location",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/site_location",
+        "source": "http://cgit.drupalcode.org/site_location",
+    },
+}

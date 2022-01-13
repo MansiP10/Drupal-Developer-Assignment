@@ -1,0 +1,7 @@
+services:
+  logger.channel.site_location:
+    parent: logger.channel_base
+    arguments: ['site_location']
+  get_site_location:
+    class: Drupal\site_location\SiteLocationService
+    arguments: ['@date.formatter', '@state']

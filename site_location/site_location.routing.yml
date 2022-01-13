@@ -1,0 +1,9 @@
+site_location.site_location_form_setting:
+  path: '/admin/config/site_location/sitelocationformsetting'
+  defaults:
+    _form: '\Drupal\site_location\Form\SiteLocationFormSetting'
+    _title: 'Site Location Form Setting'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
